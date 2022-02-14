@@ -1,5 +1,4 @@
 @use "variables"as *;
-
 .section-headline {
     &__sub {
         color: $sub;
@@ -9,22 +8,6 @@
 
     &__main {
         color: $main;
-        font-weight: bold;
-    }
-}
-
-.page-headline {
-    text-align: center;
-    z-index: 1;
-
-    &__sub {
-        color: $white;
-        font-weight: bold;
-        margin-bottom: 8px;
-    }
-
-    &__main {
-        color: $white;
         font-weight: bold;
     }
 }
@@ -68,13 +51,14 @@
     position: relative;
     z-index: 1;
     transition: all .8s ease;
-    // ボタンのアニメーション
-    &:hover {
+
+    &:hover{
         background-color: $main;
         border: none;
         color: $white;
     }
-
+    
+    
     &::after {
         content: "";
         border: 1px solid $main;
@@ -84,8 +68,10 @@
         top: 4px;
         left: 4px;
         z-index: 0;
+        transition: all .3s ease;
     }
 
+    
     &:hover::after{
         top: 0;
         left: 0;
@@ -101,8 +87,4 @@
             color: $main;
         }
     }
-}
-
-.required {
-    color: $red;
 }

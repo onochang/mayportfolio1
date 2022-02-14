@@ -529,6 +529,17 @@ th {
   font-size: 14px;
   line-height: 2;
 }
+.footer .information__text .indention {
+  display: none;
+}
+@media screen and (max-width:599px) {
+  .footer .information__text {
+    line-height: 1.8;
+  }
+  .footer .information__text .indention {
+    display: block;
+  }
+}
 .footer .copyrights {
   font-size: 14px;
 }
@@ -545,20 +556,6 @@ th {
 }
 .section-headline__main {
   color: #6E551B;
-  font-weight: bold;
-}
-
-.page-headline {
-  text-align: center;
-  z-index: 1;
-}
-.page-headline__sub {
-  color: #FFFFFF;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
-.page-headline__main {
-  color: #FFFFFF;
   font-weight: bold;
 }
 
@@ -613,6 +610,7 @@ th {
   top: 4px;
   left: 4px;
   z-index: 0;
+  transition: all 0.3s ease;
 }
 .btn:hover::after {
   top: 0;
@@ -626,10 +624,6 @@ th {
   background-color: transparent;
   border: none;
   color: #6E551B;
-}
-
-.required {
-  color: #FF0000;
 }
 
 body {
@@ -721,6 +715,10 @@ li {
 .drawer-nav .sns-link {
   justify-content: center;
   margin-top: 60px;
+}
+
+.vegas-timer-progress {
+  display: none;
 }
 
 .page-wrap {

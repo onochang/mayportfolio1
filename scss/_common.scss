@@ -1,20 +1,23 @@
-@use "variables" as *;
+@use "variables"as *;
 @use "mixin" as *;
 
-body{
+body {
     color: $black;
-    font-family: $caslon,$serif,$sans,serif;
+    font-family: $caslon,
+    $serif, 
+    $sans,
+    serif;
 }
 
-h2{
-    font-size: 36px;
+h2 {
+    font-size: 36px;   
 }
 
-h3{
+h3 {
     font-size: 28px;
 }
 
-h4{
+h4 {
     font-size: 16px;
 }
 
@@ -27,7 +30,7 @@ span{
     font-size: 14px;
 }
 
-li{
+li {
     list-style: none;
 }
 
@@ -35,7 +38,7 @@ li{
     display: none;
 }
 
-@include mq(sp){
+@include mq(sp) {
     h2 {
         font-size: 24px;
     }
@@ -63,4 +66,5 @@ li{
     .mobile-none {
         display: none;
     }
+
 }
